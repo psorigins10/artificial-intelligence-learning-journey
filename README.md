@@ -153,18 +153,30 @@ Completed:
 * RMSE
 * R² Score
 * Polynomial Regression
+* Ridge Regression
+* Polynomial degree
+* Overfitting
+* Lasso Regression
+* Elastic Net
 
 Currently exploring:
 
+* Accuracy
+* Confusion Matrix
 * Model complexity
-* Polynomial degree
-* Overfitting
+* Precision
+* Recall
+* Log Loss
+* F1 Score
 
 Next:
+* Decision Trees
+* Random Forest
+* K-Nearest Neighbors (KNN)
+* Naive Bayes
+* Support Vector Machines (SVM)
+* Clustering
 
-* Ridge Regression
-* Lasso Regression
-* Elastic Net
 
 ## 📌 Status
 
