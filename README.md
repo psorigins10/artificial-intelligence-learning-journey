@@ -158,9 +158,6 @@ Completed:
 * Overfitting
 * Lasso Regression
 * Elastic Net
-
-Currently exploring:
-
 * Accuracy
 * Confusion Matrix
 * Model complexity
@@ -169,7 +166,7 @@ Currently exploring:
 * Log Loss
 * F1 Score
 
-Next:
+Currently exploring:
 * Decision Trees
 * Random Forest
 * K-Nearest Neighbors (KNN)
@@ -177,6 +174,12 @@ Next:
 * Support Vector Machines (SVM)
 * Clustering
 
+
+Next:
+* PCA
+* Ensemble Learning
+* Cross Validation
+* Hyperparameter Tuning
 
 ## 📌 Status
 
