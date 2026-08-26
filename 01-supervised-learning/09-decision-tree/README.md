@@ -296,8 +296,8 @@ Analyze Overfitting & Class Imbalance
 
 ## Decision Tree Visualization
 
-![Decision Tree](images/decision-tree.png)
+![Decision Tree](images/decision_tree.png)
 
 ## Decision Tree on Pokemon database
 
-![Pokemon Decision Tree](images/decision-tree-pokemon.png)
+![Pokemon Decision Tree](images/decision_tree_pokemon.png)
