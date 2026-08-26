@@ -165,9 +165,9 @@ Completed:
 * Recall
 * Log Loss
 * F1 Score
+* Decision Trees
 
 Currently exploring:
-* Decision Trees
 * Random Forest
 * K-Nearest Neighbors (KNN)
 * Naive Bayes
