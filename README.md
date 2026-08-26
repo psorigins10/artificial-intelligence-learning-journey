@@ -1,6 +1,6 @@
-# Machine Learning Journey
+#  Artificial Intelligence Learning Journey
 
-This repository documents my journey of learning **Machine Learning from fundamentals to practical implementation**.
+This repository documents my journey of learning **Machine Learning and Deep Learning from fundamentals to practical implementation**.
 
 The focus is on understanding the concepts behind machine learning algorithms and implementing them using Python and Scikit-learn.
 
