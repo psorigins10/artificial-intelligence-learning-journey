@@ -268,10 +268,14 @@ artificial-intelligence-learning-journey/
 │   │   ├── 04-model-complexity/
 │   │   └── 05-log-loss/
 │   │
-│   └── 09-decision-tree/
-│       ├── images/
-│       ├── 01-decision-tree.py
-│       └── README.md
+│   ├── 09-decision-tree/
+│   │    ├── images/
+│   │    ├── 01-decision-tree.py
+│   │    └── README.md
+│   │
+│   └── 10-random-forest/
+│        ├── 01-random-forest.py
+│        └── README.md
 │
 ├── 04-data-science/
 │   │
@@ -376,12 +380,12 @@ and understand what happens **inside the model**.
 - [x] Log Loss
 - [x] Model Complexity
 - [x] Decision Trees
+- [x] Random Forest
 
 ## 🔨 Coming Next
 
 These are planned learning topics, not topics I am claiming to have completed:
 
-- [ ] Random Forest
 - [ ] K-Nearest Neighbors
 - [ ] Naive Bayes
 - [ ] Support Vector Machines
