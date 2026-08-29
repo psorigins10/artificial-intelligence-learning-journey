@@ -273,8 +273,18 @@ artificial-intelligence-learning-journey/
 │   │    ├── 01-decision-tree.py
 │   │    └── README.md
 │   │
-│   └── 10-random-forest/
-│        ├── 01-random-forest.py
+│   ├── 10-random-forest/
+│   │     ├── 01-random-forest.py
+│   │     └── README.md
+│   │
+│   ├── 11-knn/
+│   │    ├── images/
+│   │    ├── 01-knn.py
+│   │    └── README.md
+│   │
+│   └── 12-naive-bayes/
+│        ├── images/
+│        ├── 01-naive-bayes.py
 │        └── README.md
 │
 ├── 04-data-science/
@@ -382,12 +392,12 @@ and understand what happens **inside the model**.
 - [x] Decision Trees
 - [x] Random Forest
 - [x] K-Nearest Neighbors
+- [x] Naive Bayes
 
 ## 🔨 Coming Next
 
 These are planned learning topics, not topics I am claiming to have completed:
 
-- [ ] Naive Bayes
 - [ ] Support Vector Machines
 - [ ] Cross-Validation
 - [ ] Hyperparameter Tuning
