@@ -381,12 +381,12 @@ and understand what happens **inside the model**.
 - [x] Model Complexity
 - [x] Decision Trees
 - [x] Random Forest
+- [x] K-Nearest Neighbors
 
 ## 🔨 Coming Next
 
 These are planned learning topics, not topics I am claiming to have completed:
 
-- [ ] K-Nearest Neighbors
 - [ ] Naive Bayes
 - [ ] Support Vector Machines
 - [ ] Cross-Validation
