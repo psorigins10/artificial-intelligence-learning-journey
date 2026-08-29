@@ -469,4 +469,4 @@ If something is wrong, inefficient, or poorly implemented, that's part of the pr
 ---
 
 ⭐ **Repository:**  
-https://github.com/paravsharma24/artificial-intelligence-learning-journey
+https://github.com/psorigins10/artificial-intelligence-learning-journey
