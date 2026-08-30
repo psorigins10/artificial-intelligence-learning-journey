@@ -393,12 +393,12 @@ and understand what happens **inside the model**.
 - [x] Random Forest
 - [x] K-Nearest Neighbors
 - [x] Naive Bayes
+- [x] Support Vector Machines
 
 ## 🔨 Coming Next
 
 These are planned learning topics, not topics I am claiming to have completed:
 
-- [ ] Support Vector Machines
 - [ ] Cross-Validation
 - [ ] Hyperparameter Tuning
 - [ ] Ensemble Learning
