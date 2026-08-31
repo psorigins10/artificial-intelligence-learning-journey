@@ -232,11 +232,11 @@ artificial-intelligence-learning-journey/
 │   │   ├── 01-polynomial-regression/
 │   │   ├── housePricePrediction.py
 │   │   ├── linearRegressionBasic.py
-│   │   └── readme.md
+│   │   └── README.md
 │   │
 │   ├── 02-train-test-split/
 │   │   ├── train_test_split.py
-│   │   └── readme.md
+│   │   └── README.md
 │   │
 │   ├── 03-regression-metrics/
 │   │   ├── 01-mae/
@@ -247,7 +247,7 @@ artificial-intelligence-learning-journey/
 │   ├── 04-ridge-regression/
 │   │   ├── 01-ridge-regression.py
 │   │   ├── 02-ridge_from_scratch.py
-│   │   └── readme.md
+│   │   └── README.md
 │   │
 │   ├── 05-lasso-regression/
 │   │   ├── 01-lasso-regression.py
@@ -269,23 +269,37 @@ artificial-intelligence-learning-journey/
 │   │   └── 05-log-loss/
 │   │
 │   ├── 09-decision-tree/
-│   │    ├── images/
-│   │    ├── 01-decision-tree.py
-│   │    └── README.md
+│   │   ├── images/
+│   │   ├── 01-decision-tree.py
+│   │   └── README.md
 │   │
 │   ├── 10-random-forest/
-│   │     ├── 01-random-forest.py
-│   │     └── README.md
+│   │   ├── 01-random-forest.py
+│   │   └── README.md
 │   │
 │   ├── 11-knn/
-│   │    ├── images/
-│   │    ├── 01-knn.py
-│   │    └── README.md
+│   │   ├── images/
+│   │   ├── 01-knn.py
+│   │   └── README.md
 │   │
-│   └── 12-naive-bayes/
-│        ├── images/
-│        ├── 01-naive-bayes.py
-│        └── README.md
+│   ├── 12-naive-bayes/
+│   │   ├── images/
+│   │   ├── 01-naive-bayes.py
+│   │   └── README.md
+│   │
+│   ├── 13-support-vector-machines/
+│   │   ├── images/
+│   │   ├── 01-svm.py
+│    │  ├── 02-svm.py
+│   │   └── README.md
+│   │
+│   ├── 14-cross-validation/
+│   │   ├── 01-cross-validation.py
+│   │   └── README.md
+│   │
+│   └── 15-hyperparameter-tuning/
+│       ├── 01-grid-search.py
+│       └── README.md
 │
 ├── 04-data-science/
 │   │
@@ -394,13 +408,13 @@ and understand what happens **inside the model**.
 - [x] K-Nearest Neighbors
 - [x] Naive Bayes
 - [x] Support Vector Machines
+- [x] Cross-Validation
+- [x] Hyperparameter Tuning
 
 ## 🔨 Coming Next
 
 These are planned learning topics, not topics I am claiming to have completed:
 
-- [ ] Cross-Validation
-- [ ] Hyperparameter Tuning
 - [ ] Ensemble Learning
 - [ ] Unsupervised Learning
 - [ ] K-Means Clustering
