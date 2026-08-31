@@ -290,7 +290,7 @@ artificial-intelligence-learning-journey/
 │   ├── 13-support-vector-machines/
 │   │   ├── images/
 │   │   ├── 01-svm.py
-│   │  ├── 02-svm.py
+│   │   ├── 02-svm.py
 │   │   └── README.md
 │   │
 │   ├── 14-cross-validation/
@@ -300,6 +300,22 @@ artificial-intelligence-learning-journey/
 │   └── 15-hyperparameter-tuning/
 │       ├── 01-grid-search.py
 │       └── README.md
+│
+├── 02-unsupervised-learning/
+│   │
+│   ├── 01-k-means/
+│   │   ├── images/
+│   │   ├── 01-kmeans.py
+│   │   ├── 02-elbow-method.py
+│   │   └── README.md
+│   │
+│   └── 02-pca/
+│       ├── 01-pca.py
+│       └── README.md
+│
+├── 03-deep-learning/
+│   │
+│   └── ...
 │
 ├── 04-data-science/
 │   │
@@ -316,6 +332,7 @@ artificial-intelligence-learning-journey/
 │       └── search_pokemon001.py
 │
 ├── .gitignore
+│
 └── README.md
 ```
 
@@ -410,14 +427,14 @@ and understand what happens **inside the model**.
 - [x] Support Vector Machines
 - [x] Cross-Validation
 - [x] Hyperparameter Tuning
+- [x] Unsupervised Learning
+- [x] K-Means Clustering
+- [x] PCA
 
 ## 🔨 Coming Next
 
 These are planned learning topics, not topics I am claiming to have completed:
 
-- [ ] Unsupervised Learning
-- [ ] K-Means Clustering
-- [ ] PCA
 - [ ] Deep Learning
 
 ---
