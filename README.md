@@ -290,7 +290,7 @@ artificial-intelligence-learning-journey/
 │   ├── 13-support-vector-machines/
 │   │   ├── images/
 │   │   ├── 01-svm.py
-│    │  ├── 02-svm.py
+│   │  ├── 02-svm.py
 │   │   └── README.md
 │   │
 │   ├── 14-cross-validation/
@@ -415,10 +415,8 @@ and understand what happens **inside the model**.
 
 These are planned learning topics, not topics I am claiming to have completed:
 
-- [ ] Ensemble Learning
 - [ ] Unsupervised Learning
 - [ ] K-Means Clustering
-- [ ] DBSCAN
 - [ ] PCA
 - [ ] Deep Learning
 
