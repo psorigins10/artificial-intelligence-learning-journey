@@ -21,7 +21,7 @@ class LinearRegressionGD:
             b_step_size = loss_slop * learningRate
             b_new = self.intercept_ - b_step_size
 
-            if abs(b_new - self.intercept_) < 0.000001 and abs(m_new - self.coef_) < 0.000001:
+            if np.logical_and(abs(b_new - self.intercept_) < 0.000001, abs(m_new - self.coef_) < 0.000001):
                 break
             else:
                 self.intercept_ = b_new
