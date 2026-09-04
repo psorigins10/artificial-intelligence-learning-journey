@@ -1,16 +1,27 @@
 # 🤖 Artificial Intelligence Learning Journey
 
-> My hands-on journey through Data Science, Machine Learning, and eventually Deep Learning.
+> My hands-on journey through Data Science, Machine Learning, Deep Learning, and eventually Advanced AI.
 
-This repository documents what I am learning, implementing, experimenting with, and understanding along the way.
+This repository documents what I am learning, implementing, experimenting with, breaking, fixing, and understanding along the way.
 
-The goal is not to simply learn how to use `scikit-learn`.
+The goal is **not** to simply learn how to call machine-learning APIs.
 
-The goal is to understand **what the algorithms are doing, why they work, how they are evaluated, and where they fail**.
+The goal is to understand:
+
+* What the algorithms are doing
+* Why they work
+* What is happening mathematically
+* How models learn
+* How models are evaluated
+* Why models fail
+* When to use a particular algorithm
+* When **not** to use it
+
+This is a learning repository, not a collection of polished production projects.
 
 ---
 
-## 🧭 Learning Roadmap
+# 🧭 Learning Roadmap
 
 ```text
 Data Science
@@ -19,22 +30,36 @@ Data Science
 Supervised Learning
      │
      ├── Regression
-     │
      ├── Regularization
-     │
      └── Classification
      │
      ▼
 Unsupervised Learning
      │
+     ├── Clustering
+     └── Dimensionality Reduction
+     │
      ▼
 Deep Learning
      │
+     ├── Perceptrons
+     ├── Neural Networks
+     ├── Backpropagation
+     ├── PyTorch
+     └── ANN Projects
+     │
      ▼
 Advanced AI
+     │
+     ├── CNNs
+     ├── Transformers
+     ├── Generative AI
+     ├── RAG
+     ├── AI Agents
+     └── Research
 ```
 
-This repository is currently focused primarily on **Data Science and Supervised Learning**.
+The repository is currently moving from **classical Machine Learning and Data Science into Deep Learning**.
 
 ---
 
@@ -44,297 +69,452 @@ This repository is currently focused primarily on **Data Science and Supervised 
 
 ### Pandas
 
-- DataFrames
-- Dataset exploration
-- Searching/filtering datasets
-- Working with structured data
+* DataFrames
+* Dataset exploration
+* Searching and filtering
+* Working with structured data
+* Missing values
+* Data manipulation
 
-📁 `04-data-science/pandas/`
+📁 `03-data-science/pandas/`
 
 ### Matplotlib
 
-- Basic plotting
-- Data visualization
-- Working with charts and figures
+* Basic plotting
+* Data visualization
+* Charts and figures
 
-📁 `04-data-science/matplotlib/`
+📁 `03-data-science/matplotlib/`
 
 ### Datasets
 
 Currently used datasets include:
 
-- Pokémon dataset
-- House-price datasets
-- Regression practice datasets
+* Pokémon dataset
+* House-price datasets
+* Regression practice datasets
+* Customer churn dataset
 
-📁 `04-data-science/data-bases/`
+📁 `03-data-science/data-bases/`
 
 ---
 
-# 🤖 Supervised Learning
+# 🤖 Machine Learning
 
 ## 📈 Regression
 
-### 1. Linear Regression
+### Linear Regression
 
 Concepts covered:
 
-- Linear Regression
-- Features and targets
-- Coefficients
-- Intercept
-- Predictions
-- Best-fit line
-- Ordinary Least Squares
-- Multiple Linear Regression
+* Linear Regression
+* Features and targets
+* Coefficients
+* Intercept
+* Predictions
+* Best-fit line
+* Ordinary Least Squares
+* Multiple Linear Regression
 
-📁 `01-supervised-learning/01-linear-regression/`
+📁 `01-machine-learning/01-linear-regression/`
 
----
+### Train/Test Split
 
-### 2. Train/Test Split
+* Training data
+* Testing data
+* Generalization
+* `train_test_split`
+* `test_size`
+* `random_state`
+* Evaluating models on unseen data
 
-Concepts covered:
+📁 `01-machine-learning/02-train-test-split/`
 
-- Training data
-- Testing data
-- Generalization
-- `train_test_split`
-- `test_size`
-- `random_state`
-- Evaluating models on unseen data
+### Regression Metrics
 
-📁 `01-supervised-learning/02-train-test-split/`
+* MAE
+* MSE
+* RMSE
+* R² Score
 
----
-
-### 3. Regression Metrics
-
-Metrics covered:
-
-- Mean Absolute Error — MAE
-- Mean Squared Error — MSE
-- Root Mean Squared Error — RMSE
-- R² Score
-
-📁 `01-supervised-learning/03-regression-metrics/`
+📁 `01-machine-learning/03-regression-metrics/`
 
 ---
 
 ## 🧲 Regularization
 
-### 4. Ridge Regression
+### Ridge Regression
 
-Concepts covered:
+* Overfitting
+* L2 regularization
+* Regularization penalty
+* Coefficient shrinkage
+* `alpha`
+* Implementation with Scikit-learn
+* Implementation from scratch
 
-- Overfitting
-- L2 Regularization
-- Regularization penalty
-- Coefficient shrinkage
-- `alpha`
-- Ridge Regression with Scikit-learn
-- Ridge Regression from scratch
+📁 `01-machine-learning/04-ridge-regression/`
 
-📁 `01-supervised-learning/04-ridge-regression/`
+### Lasso Regression
 
----
+* L1 regularization
+* Overfitting
+* Coefficient shrinkage
+* Feature selection
+* Coefficients becoming zero
 
-### 5. Lasso Regression
+📁 `01-machine-learning/05-lasso-regression/`
 
-Concepts covered:
+### Elastic Net
 
-- L1 Regularization
-- Overfitting
-- Coefficient shrinkage
-- Feature selection
-- Coefficients becoming zero
-- Lasso Regression with Scikit-learn
+* L1 + L2 regularization
+* Ridge + Lasso
+* `alpha`
+* `l1_ratio`
+* Feature selection
+* Correlated features
 
-📁 `01-supervised-learning/05-lasso-regression/`
-
----
-
-### 6. Elastic Net
-
-Concepts covered:
-
-- L1 + L2 Regularization
-- Combining Ridge and Lasso
-- `alpha`
-- `l1_ratio`
-- Feature selection
-- Handling correlated features
-
-📁 `01-supervised-learning/06-elastic-net/`
+📁 `01-machine-learning/06-elastic-net/`
 
 ---
 
 # 🎯 Classification
 
-### 7. Logistic Regression
+### Logistic Regression
 
-Concepts covered:
+* Classification vs Regression
+* Binary classification
+* Linear combination
+* `z = wx + b`
+* Sigmoid function
+* Probability prediction
+* Classification thresholds
 
-- Classification vs Regression
-- Binary Classification
-- Linear combination
-- `z = wx + b`
-- Sigmoid function
-- Probability prediction
-- Classification threshold
-- Logistic Regression with Scikit-learn
+📁 `01-machine-learning/07-logistic-regression/`
 
-📁 `01-supervised-learning/07-logistic-regression/`
+### Classification Metrics
+
+* Accuracy
+* Confusion Matrix
+* Precision
+* Recall
+* F1 Score
+* Log Loss
+* Model Complexity
+
+📁 `01-machine-learning/08-classification-metrics/`
+
+### Decision Trees
+
+* Decision tree intuition
+* Decision rules
+* Splitting data
+* Classification
+* Feature-based decisions
+* Model interpretation
+
+📁 `01-machine-learning/09-decision-tree/`
+
+### Random Forest
+
+* Ensemble learning
+* Multiple decision trees
+* Bootstrap sampling
+* Feature randomness
+* Classification
+
+📁 `01-machine-learning/10-random-forest/`
+
+### K-Nearest Neighbors
+
+* Distance-based classification
+* Nearest neighbors
+* Choosing K
+* Classification
+
+📁 `01-machine-learning/11-knn/`
+
+### Naive Bayes
+
+* Bayes theorem
+* Conditional probability
+* Probabilistic classification
+
+📁 `01-machine-learning/12-naive-bayes/`
+
+### Support Vector Machines
+
+* Hyperplanes
+* Margins
+* Support vectors
+* Kernel intuition
+* Classification
+
+📁 `01-machine-learning/13-support-vector-machines/`
+
+### Cross-Validation
+
+* K-Fold Cross-Validation
+* Validation strategy
+* Model evaluation
+* Generalization
+
+📁 `01-machine-learning/14-cross-validation/`
+
+### Hyperparameter Tuning
+
+* Grid Search
+* Hyperparameters
+* Model comparison
+* Selecting better configurations
+
+📁 `01-machine-learning/15-hyperparameter-tuning/`
 
 ---
 
-### 8. Classification Metrics
+# 🔍 Unsupervised Learning
 
-Metrics and concepts covered:
+## K-Means Clustering
 
-- Accuracy
-- Confusion Matrix
-- Precision
-- Recall
-- F1 Score
-- Log Loss
-- Model Complexity
+* Clustering
+* Centroids
+* Distance
+* Iterative optimization
+* Elbow Method
 
-📁 `01-supervised-learning/08-classification-metrics/`
+📁 `02-unsupervised-learning/01-k-means/`
 
----
+## PCA
 
-### 9. Decision Trees
+* Dimensionality reduction
+* Principal components
+* Variance
+* Feature transformation
 
-Concepts covered:
-
-- Decision Tree intuition
-- Decision rules
-- Splitting data
-- Classification
-- Feature-based decisions
-- Model interpretation
-- Scikit-learn Decision Trees
-- Pokémon classification experiment
-
-📁 `01-supervised-learning/09-decision-tree/`
+📁 `02-unsupervised-learning/02-pca/`
 
 ---
 
-# 🗂️ Repository Structure
+# 🧠 Deep Learning
+
+I have now started learning Deep Learning.
+
+The current focus is on understanding neural networks from the fundamentals rather than treating them as a black box.
+
+## Perceptron
+
+Topics:
+
+* What a perceptron is
+* Inputs
+* Weights
+* Bias
+* Weighted sum
+* Activation
+* Prediction
+* Learning intuition
+
+📁 `02-deep-learning/01-Perceptron/`
+
+---
+
+# 🔥 Current Project — Customer Churn Prediction using ANN
+
+I have started applying Deep Learning concepts by building a **Customer Churn Prediction model using an Artificial Neural Network (ANN)**.
+
+📁 `projects/customer-churn-prediction-ann/`
+
+The project is implemented in **PyTorch**, even though the original tutorial that inspired it used TensorFlow/Keras.
+
+## What the project does
+
+The model takes customer information such as:
+
+* Age
+* Gender
+* Tenure
+* Usage Frequency
+* Support Calls
+* Payment Delay
+* Subscription Type
+* Contract Length
+* Total Spend
+* Last Interaction
+
+and predicts whether the customer is likely to churn.
+
+---
+
+## 🧠 ANN Architecture
+
+The current network is:
 
 ```text
-artificial-intelligence-learning-journey/
-│
-├── 01-supervised-learning/
-│   │
-│   ├── 01-linear-regression/
-│   │   ├── 01-polynomial-regression/
-│   │   ├── housePricePrediction.py
-│   │   ├── linearRegressionBasic.py
-│   │   └── README.md
-│   │
-│   ├── 02-train-test-split/
-│   │   ├── train_test_split.py
-│   │   └── README.md
-│   │
-│   ├── 03-regression-metrics/
-│   │   ├── 01-mae/
-│   │   ├── 02-mse/
-│   │   ├── 03-rmse/
-│   │   └── 04-r2-score/
-│   │
-│   ├── 04-ridge-regression/
-│   │   ├── 01-ridge-regression.py
-│   │   ├── 02-ridge_from_scratch.py
-│   │   └── README.md
-│   │
-│   ├── 05-lasso-regression/
-│   │   ├── 01-lasso-regression.py
-│   │   └── README.md
-│   │
-│   ├── 06-elastic-net/
-│   │   ├── 01-elastic-net.py
-│   │   └── README.md
-│   │
-│   ├── 07-logistic-regression/
-│   │   ├── 01-logistic-regression.py
-│   │   └── README.md
-│   │
-│   ├── 08-classification-metrics/
-│   │   ├── 01-accuracy-score/
-│   │   ├── 02-confusion-matrix/
-│   │   ├── 03-f1-score/
-│   │   ├── 04-model-complexity/
-│   │   └── 05-log-loss/
-│   │
-│   ├── 09-decision-tree/
-│   │   ├── images/
-│   │   ├── 01-decision-tree.py
-│   │   └── README.md
-│   │
-│   ├── 10-random-forest/
-│   │   ├── 01-random-forest.py
-│   │   └── README.md
-│   │
-│   ├── 11-knn/
-│   │   ├── images/
-│   │   ├── 01-knn.py
-│   │   └── README.md
-│   │
-│   ├── 12-naive-bayes/
-│   │   ├── images/
-│   │   ├── 01-naive-bayes.py
-│   │   └── README.md
-│   │
-│   ├── 13-support-vector-machines/
-│   │   ├── images/
-│   │   ├── 01-svm.py
-│   │   ├── 02-svm.py
-│   │   └── README.md
-│   │
-│   ├── 14-cross-validation/
-│   │   ├── 01-cross-validation.py
-│   │   └── README.md
-│   │
-│   └── 15-hyperparameter-tuning/
-│       ├── 01-grid-search.py
-│       └── README.md
-│
-├── 02-unsupervised-learning/
-│   │
-│   ├── 01-k-means/
-│   │   ├── images/
-│   │   ├── 01-kmeans.py
-│   │   ├── 02-elbow-method.py
-│   │   └── README.md
-│   │
-│   └── 02-pca/
-│       ├── 01-pca.py
-│       └── README.md
-│
-├── 03-deep-learning/
-│   │
-│   └── ...
-│
-├── 04-data-science/
-│   │
-│   ├── data-bases/
-│   │   ├── house_price_lasso_practice.csv
-│   │   ├── house_price_ridge_practice.csv
-│   │   └── pokemon.csv
-│   │
-│   ├── matplotlib/
-│   │   ├── matplotlib_learn1.py
-│   │   └── matplotlib_learn2.py
-│   │
-│   └── pandas/
-│       └── search_pokemon001.py
-│
-├── .gitignore
-│
-└── README.md
+15 Input Features
+       ↓
+Linear 15 → 16
+       ↓
+ReLU
+       ↓
+Linear 16 → 8
+       ↓
+ReLU
+       ↓
+Linear 8 → 1
+       ↓
+Output
 ```
+
+The model contains **401 trainable parameters**.
+
+---
+
+## ⚙️ PyTorch Concepts Used
+
+This project introduced several important PyTorch concepts:
+
+* `torch.Tensor`
+* `nn.Module`
+* `nn.Linear`
+* `nn.ReLU`
+* `BCEWithLogitsLoss`
+* Adam optimizer
+* Forward propagation
+* Backpropagation
+* Gradients
+* `TensorDataset`
+* `DataLoader`
+* Mini-batch training
+* GPU acceleration
+* `model.train()`
+* `model.eval()`
+* `torch.no_grad()`
+* `state_dict()`
+
+---
+
+## 🔄 Training Pipeline
+
+The training process is:
+
+```text
+Dataset
+   ↓
+Preprocessing
+   ↓
+Train/Test Split
+   ↓
+Scaling
+   ↓
+PyTorch Dataset
+   ↓
+DataLoader
+   ↓
+Batch
+   ↓
+Forward Pass
+   ↓
+Loss
+   ↓
+Backpropagation
+   ↓
+Optimizer
+   ↓
+Updated Weights
+   ↓
+Repeat
+```
+
+This helped me understand what is actually happening behind a high-level:
+
+```python
+model.fit(X, y)
+```
+
+type of workflow.
+
+---
+
+## 💾 Model Persistence
+
+The trained model can be saved and loaded later.
+
+```text
+churn_model.pth
+```
+
+stores the trained neural-network parameters.
+
+```text
+scaler.pkl
+```
+
+stores the fitted feature scaler.
+
+This allows the model to be trained once and then used later for inference without retraining.
+
+---
+
+## 🔮 Inference
+
+The project also contains a prediction workflow where a new customer's information can be entered manually.
+
+The system:
+
+```text
+New Customer
+     ↓
+Preprocessing
+     ↓
+Scaling
+     ↓
+Trained ANN
+     ↓
+Sigmoid
+     ↓
+Churn Probability
+     ↓
+Churn / No Churn
+```
+
+Example:
+
+```text
+Churn Probability: 98.72%
+
+Prediction: CUSTOMER WILL CHURN
+```
+
+---
+
+# 🧪 Model Evaluation
+
+Models are not judged only by whether they produce predictions.
+
+I evaluate them using:
+
+* Accuracy
+* Confusion Matrix
+* Precision
+* Recall
+* F1 Score
+* Loss
+
+For the current churn project, one training run reached approximately **99.68% test accuracy**.
+
+However, this result is being treated cautiously.
+
+A very high score can sometimes indicate:
+
+* Duplicate records
+* Data leakage
+* Train/test contamination
+* Dataset-specific patterns
+* An unusually easy dataset
+
+So the next step is not simply to celebrate the 99.68%.
+
+The next step is to **investigate why the model performs so well and whether it actually generalizes**.
 
 ---
 
@@ -343,25 +523,31 @@ artificial-intelligence-learning-journey/
 For each topic, I try to follow this cycle:
 
 ```text
-        Learn the Concept
-               │
-               ▼
-     Understand the Mathematics
-               │
-               ▼
-       Understand the Algorithm
-               │
-               ▼
-          Write the Code
-               │
-               ▼
+       Learn the Concept
+              │
+              ▼
+    Understand the Mathematics
+              │
+              ▼
+     Understand the Algorithm
+              │
+              ▼
+          Write Code
+              │
+              ▼
        Experiment with Data
-               │
-               ▼
-         Evaluate the Model
-               │
-               ▼
-        Document What I Learned
+              │
+              ▼
+        Evaluate Results
+              │
+              ▼
+       Document What I Learned
+              │
+              ▼
+       Find What I Got Wrong
+              │
+              ▼
+          Improve It
 ```
 
 The objective is to move beyond:
@@ -377,15 +563,18 @@ and understand what happens **inside the model**.
 
 # 🛠️ Tools & Technologies
 
-| Technology | Purpose |
-|---|---|
-| Python | Programming |
-| NumPy | Numerical computing |
-| Pandas | Data manipulation |
-| Matplotlib | Data visualization |
-| Scikit-learn | Machine Learning |
-| Git | Version control |
-| GitHub | Code and documentation |
+| Technology   | Purpose                    |
+| ------------ | -------------------------- |
+| Python       | Programming                |
+| NumPy        | Numerical computing        |
+| Pandas       | Data manipulation          |
+| Matplotlib   | Data visualization         |
+| Scikit-learn | Classical Machine Learning |
+| PyTorch      | Deep Learning              |
+| Torchinfo    | Neural network summaries   |
+| CUDA         | GPU acceleration           |
+| Git          | Version control            |
+| GitHub       | Code and documentation     |
 
 ---
 
@@ -393,73 +582,156 @@ and understand what happens **inside the model**.
 
 ## ✅ Completed
 
-- [x] Data Science fundamentals
-- [x] Pandas
-- [x] Matplotlib
-- [x] Linear Regression
-- [x] Polynomial Regression
-- [x] Train/Test Split
-- [x] MAE
-- [x] MSE
-- [x] RMSE
-- [x] R² Score
-- [x] Ridge Regression
-- [x] L2 Regularization
-- [x] Overfitting
-- [x] Lasso Regression
-- [x] L1 Regularization
-- [x] Feature Selection
-- [x] Elastic Net
-- [x] Logistic Regression
-- [x] Sigmoid Function
-- [x] Binary Classification
-- [x] Accuracy
-- [x] Confusion Matrix
-- [x] Precision
-- [x] Recall
-- [x] F1 Score
-- [x] Log Loss
-- [x] Model Complexity
-- [x] Decision Trees
-- [x] Random Forest
-- [x] K-Nearest Neighbors
-- [x] Naive Bayes
-- [x] Support Vector Machines
-- [x] Cross-Validation
-- [x] Hyperparameter Tuning
-- [x] Unsupervised Learning
-- [x] K-Means Clustering
-- [x] PCA
+### Data Science
 
-## 🔨 Coming Next
+* Pandas
+* Matplotlib
+* Dataset exploration
+* Data cleaning
 
-These are planned learning topics, not topics I am claiming to have completed:
+### Supervised Learning
 
-- [ ] Deep Learning
+* Linear Regression
+* Polynomial Regression
+* Train/Test Split
+* MAE
+* MSE
+* RMSE
+* R² Score
+* Ridge Regression
+* L2 Regularization
+* Overfitting
+* Lasso Regression
+* L1 Regularization
+* Feature Selection
+* Elastic Net
+* Logistic Regression
+* Sigmoid Function
+* Binary Classification
+* Accuracy
+* Confusion Matrix
+* Precision
+* Recall
+* F1 Score
+* Log Loss
+* Model Complexity
+* Decision Trees
+* Random Forest
+* K-Nearest Neighbors
+* Naive Bayes
+* Support Vector Machines
+* Cross-Validation
+* Hyperparameter Tuning
+
+### Unsupervised Learning
+
+* K-Means Clustering
+* Elbow Method
+* PCA
+
+### Deep Learning
+
+* Perceptron
+* Neural Network fundamentals
+* PyTorch fundamentals
+* ANN
+* Forward Propagation
+* Backpropagation
+* Loss Functions
+* Optimizers
+* DataLoader
+* Mini-batch Training
+* Model Saving
+* Model Loading
+* Inference
+
+---
+
+# 🔨 Currently Learning
+
+Deep Learning is currently the next major stage.
+
+Upcoming topics include:
+
+* Neural Networks from Scratch
+* Activation Functions
+* Backpropagation in greater depth
+* Optimization
+* PyTorch
+* CNNs
+* Image Classification
+* Regularization in Neural Networks
+* Dropout
+* Batch Normalization
+
+After the foundations are stronger, the journey will continue toward:
+
+* NLP
+* Transformers
+* Generative AI
+* RAG
+* AI Agents
+* Multimodal AI
+* AI Research
 
 ---
 
 # 🎯 Why I'm Building This
 
-A lot of Machine Learning tutorials teach you to use an API without really understanding the model.
+A lot of Machine Learning tutorials teach you how to use an API.
 
-I want to approach it differently.
+That's useful, but it's not enough for me.
 
-For every algorithm, I want to understand:
+I want to understand:
 
-- What problem does it solve?
-- What assumptions does it make?
-- What is happening mathematically?
-- How does the algorithm learn?
-- What parameters control it?
-- How can it overfit?
-- How do we evaluate it?
-- When should we use it?
-- When should we **not** use it?
+* What problem does the algorithm solve?
+* What assumptions does it make?
+* What is happening mathematically?
+* How does the algorithm learn?
+* What parameters control it?
+* Why does it make a particular prediction?
+* How can it overfit?
+* How should it be evaluated?
+* When should it be used?
+* When should it not be used?
 
 This repository is my attempt to answer those questions through:
 
-**Code + Mathematics + Experiments + Documentation**
+```text
+Code
+  +
+Mathematics
+  +
+Experiments
+  +
+Failures
+  +
+Debugging
+  +
+Documentation
+```
+
+---
+
+# 🤖 AI-Assisted Learning
+
+AI tools are part of this learning process.
+
+**ChatGPT and other AI tools may be used to:**
+
+* Explain difficult concepts
+* Help translate implementations between frameworks
+* Debug errors
+* Suggest approaches
+* Review code
+* Help document projects
+* Explain unexpected results
+
+AI assistance is **not treated as a replacement for understanding**.
+
+When AI helps write code, the goal is to understand the code, test it, break it, modify it, and eventually be able to explain what it is doing.
+
+This repository therefore documents both the **learning process and the use of AI as a development/learning tool**.
 
 ---
 
@@ -467,35 +739,48 @@ This repository is my attempt to answer those questions through:
 
 This repository is actively being developed.
 
-I'm learning one concept at a time, implementing it, experimenting with datasets, and documenting what I understand.
+I'm learning one concept at a time, implementing it, experimenting with datasets, debugging problems, evaluating results, and documenting what I understand.
 
 The structure will change as the journey moves from:
 
 ```text
 Data Science
       ↓
-Supervised Learning
+Machine Learning
       ↓
 Unsupervised Learning
       ↓
 Deep Learning
       ↓
 Advanced AI
+      ↓
+Research
 ```
 
 ---
 
-## 🤝 Let's Build Shit Together
+# 🤝 Let's Build Shit Together
 
 This isn't a finished textbook.
 
 It's a record of learning AI from the fundamentals.
 
-If something is wrong, inefficient, or poorly implemented, that's part of the process.
+Some code will be imperfect.
 
-**Keep learning. Keep building. Keep breaking things.**
+Some experiments will fail.
 
----
+Some results will be suspicious.
 
-⭐ **Repository:**  
+Some implementations will eventually be rewritten.
+
+That's the point.
+
+If something is wrong, inefficient, outdated, or poorly implemented, that's part of the journey.
+
+**Keep learning.
+Keep building.
+Keep breaking things.
+Keep figuring out why they broke.**
+
+⭐ Repository:
 https://github.com/psorigins10/artificial-intelligence-learning-journey
