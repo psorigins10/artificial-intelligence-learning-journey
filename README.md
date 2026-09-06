@@ -1,23 +1,27 @@
 # 🤖 Artificial Intelligence Learning Journey
 
-> My hands-on journey through Data Science, Machine Learning, Deep Learning, and eventually Advanced AI.
+> **Learning AI from the fundamentals — mathematics → algorithms → code → experiments → real projects.**
 
-This repository documents what I am learning, implementing, experimenting with, breaking, fixing, and understanding along the way.
+This repository is my hands-on journey through **Data Science, Machine Learning, Deep Learning, and eventually Advanced AI**.
 
-The goal is **not** to simply learn how to call machine-learning APIs.
+I'm not trying to just learn how to call APIs or copy implementations.
 
-The goal is to understand:
+I want to understand:
 
-* What the algorithms are doing
-* Why they work
+* What the algorithm is doing
+* Why it works
 * What is happening mathematically
-* How models learn
+* How models actually learn
+* How parameters are updated
 * How models are evaluated
 * Why models fail
-* When to use a particular algorithm
-* When **not** to use it
+* When an algorithm should be used
+* When it should **not** be used
 
-This is a learning repository, not a collection of polished production projects.
+This repository contains the things I learn, build, break, debug, experiment with, and gradually understand.
+
+**The goal is not to make the repository look perfect.**
+**The goal is to make my understanding stronger.**
 
 ---
 
@@ -27,54 +31,62 @@ This is a learning repository, not a collection of polished production projects.
 Data Science
      │
      ▼
-Supervised Learning
+Machine Learning
      │
      ├── Regression
+     ├── Classification
      ├── Regularization
-     └── Classification
-     │
-     ▼
-Unsupervised Learning
-     │
-     ├── Clustering
-     └── Dimensionality Reduction
-     │
-     ▼
-Deep Learning
-     │
-     ├── Perceptrons
-     ├── Neural Networks
-     ├── Backpropagation
-     ├── PyTorch
-     └── ANN Projects
-     │
-     ▼
-Advanced AI
-     │
-     ├── CNNs
-     ├── Transformers
-     ├── Generative AI
-     ├── RAG
-     ├── AI Agents
-     └── Research
+     ├── Model Evaluation
+     └── Unsupervised Learning
+             │
+             ▼
+       Deep Learning
+             │
+             ├── Perceptron
+             ├── Neural Networks
+             ├── Forward Propagation
+             ├── Loss Functions
+             ├── Backpropagation
+             ├── Gradient Descent
+             ├── PyTorch
+             └── ANN Projects
+                    │
+                    ▼
+              Computer Vision
+                    │
+                    ├── CNNs
+                    └── Image Classification
+                           │
+                           ▼
+                     Advanced AI
+                           │
+                           ├── NLP
+                           ├── Transformers
+                           ├── Generative AI
+                           ├── RAG
+                           ├── AI Agents
+                           ├── Multimodal AI
+                           └── AI Research
 ```
 
-The repository is currently moving from **classical Machine Learning and Data Science into Deep Learning**.
+The repository is currently transitioning from **classical Machine Learning into Deep Learning**.
 
 ---
 
-# 📚 What I Have Covered
+# 📚 What I've Learned So Far
 
 ## 📊 Data Science
 
 ### Pandas
 
+Topics explored:
+
 * DataFrames
 * Dataset exploration
 * Searching and filtering
-* Working with structured data
 * Missing values
 * Data manipulation
+* Working with structured data
 
 📁 `03-data-science/pandas/`
 
@@ -83,17 +95,18 @@ The repository is currently moving from **classical Machine Learning and Data Sc
 * Basic plotting
 * Data visualization
 * Charts and figures
+* Exploring datasets visually
 
 📁 `03-data-science/matplotlib/`
 
 ### Datasets
 
-Currently used datasets include:
+I've worked with datasets including:
 
-* Pokémon dataset
-* House-price datasets
-* Regression practice datasets
-* Customer churn dataset
+* Pokémon data
+* House-price data
+* Regression datasets
+* Customer churn data
 
 📁 `03-data-science/data-bases/`
 
@@ -105,9 +118,8 @@ Currently used datasets include:
 
 ### Linear Regression
 
-Concepts covered:
+Concepts:
 
-* Linear Regression
 * Features and targets
 * Coefficients
 * Intercept
@@ -120,13 +132,12 @@ Concepts covered:
 
 ### Train/Test Split
 
-* Training data
-* Testing data
+* Training vs testing data
 * Generalization
 * `train_test_split`
 * `test_size`
 * `random_state`
-* Evaluating models on unseen data
+* Evaluating on unseen data
 
 📁 `01-machine-learning/02-train-test-split/`
 
@@ -135,7 +146,7 @@ Concepts covered:
 * MAE
 * MSE
 * RMSE
-* R² Score
+* R²
 
 📁 `01-machine-learning/03-regression-metrics/`
 
@@ -149,7 +160,6 @@ Concepts covered:
 * L2 regularization
 * Regularization penalty
 * Coefficient shrinkage
-* `alpha`
 * Implementation with Scikit-learn
 * Implementation from scratch
 
@@ -180,13 +190,15 @@ Concepts covered:
 
 # 🎯 Classification
 
+Topics covered:
+
 ### Logistic Regression
 
-* Classification vs Regression
+* Classification vs regression
 * Binary classification
 * Linear combination
 * `z = wx + b`
-* Sigmoid function
+* Sigmoid
 * Probability prediction
 * Classification thresholds
 
@@ -200,13 +212,12 @@ Concepts covered:
 * Recall
 * F1 Score
 * Log Loss
-* Model Complexity
+* Model complexity
 
 📁 `01-machine-learning/08-classification-metrics/`
 
 ### Decision Trees
 
-* Decision tree intuition
 * Decision rules
 * Splitting data
 * Classification
@@ -230,7 +241,6 @@ Concepts covered:
 * Distance-based classification
 * Nearest neighbors
 * Choosing K
-* Classification
 
 📁 `01-machine-learning/11-knn/`
 
@@ -248,7 +258,6 @@ Concepts covered:
 * Margins
 * Support vectors
 * Kernel intuition
-* Classification
 
 📁 `01-machine-learning/13-support-vector-machines/`
 
@@ -297,15 +306,14 @@ Concepts covered:
 
 # 🧠 Deep Learning
 
-I have now started learning Deep Learning.
+This is where the journey is getting serious.
 
-The current focus is on understanding neural networks from the fundamentals rather than treating them as a black box.
+The current focus is understanding **neural networks from the inside**, rather than treating them as black boxes.
 
 ## Perceptron
 
 Topics:
 
-* What a perceptron is
 * Inputs
 * Weights
 * Bias
@@ -318,15 +326,17 @@ Topics:
 
 ---
 
-# 🔥 Current Project — Customer Churn Prediction using ANN
+# 🔥 Projects
 
-I have started applying Deep Learning concepts by building a **Customer Churn Prediction model using an Artificial Neural Network (ANN)**.
+Projects are where I take the concepts I've learned and try to turn them into actual working systems.
+
+---
+
+## 🧠 Customer Churn Prediction — ANN
 
 📁 `projects/customer-churn-prediction-ann/`
 
-The project is implemented in **PyTorch**, even though the original tutorial that inspired it used TensorFlow/Keras.
-
-## What the project does
+A customer churn prediction system built using **PyTorch**.
 
 The model takes customer information such as:
 
@@ -343,35 +353,27 @@ The model takes customer information such as:
 
 and predicts whether the customer is likely to churn.
 
----
-
-## 🧠 ANN Architecture
-
-The current network is:
+### Architecture
 
 ```text
 15 Input Features
-       ↓
+        ↓
 Linear 15 → 16
-       ↓
+        ↓
 ReLU
-       ↓
+        ↓
 Linear 16 → 8
-       ↓
+        ↓
 ReLU
-       ↓
+        ↓
 Linear 8 → 1
-       ↓
+        ↓
 Output
 ```
 
-The model contains **401 trainable parameters**.
+The network contains **401 trainable parameters**.
 
----
-
-## ⚙️ PyTorch Concepts Used
-
-This project introduced several important PyTorch concepts:
+### Concepts practiced
 
 * `torch.Tensor`
 * `nn.Module`
@@ -382,20 +384,16 @@ This project introduced several important PyTorch concepts:
 * Forward propagation
 * Backpropagation
 * Gradients
-* `TensorDataset`
-* `DataLoader`
+* TensorDataset
+* DataLoader
 * Mini-batch training
 * GPU acceleration
-* `model.train()`
-* `model.eval()`
-* `torch.no_grad()`
-* `state_dict()`
+* Training/evaluation modes
+* Model saving
+* Model loading
+* Inference
 
----
-
-## 🔄 Training Pipeline
-
-The training process is:
+The project also helped me understand the complete training loop:
 
 ```text
 Dataset
@@ -425,73 +423,184 @@ Updated Weights
 Repeat
 ```
 
-This helped me understand what is actually happening behind a high-level:
+---
+
+# 🔢 Handwritten Digit Classifier
+
+📁 `projects/NumberClassifier/`
+
+This is my first **end-to-end Deep Learning application**.
+
+The goal:
+
+> Draw or upload a handwritten digit → send it to an API → run it through a trained neural network → return the predicted digit.
+
+### System Architecture
+
+```text
+                 Flutter App
+                     │
+          Draw / Upload Digit
+                     │
+                     ▼
+                PNG Image
+                     │
+                     ▼
+                FastAPI API
+                     │
+                     ▼
+             Image Preprocessing
+                     │
+                     ▼
+              PyTorch MLP
+                     │
+                     ▼
+              Prediction 0–9
+                     │
+                     ▼
+                FastAPI
+                     │
+                     ▼
+                Flutter UI
+```
+
+### Neural Network
+
+The classifier uses an MLP:
+
+```text
+Input Image
+28 × 28
+   ↓
+Flatten
+   ↓
+784
+   ↓
+Linear 784 → 128
+   ↓
+ReLU
+   ↓
+Linear 128 → 64
+   ↓
+ReLU
+   ↓
+Linear 64 → 10
+   ↓
+Digit Prediction
+```
+
+### Training
+
+The model was trained on **MNIST** using:
+
+* PyTorch
+* Cross Entropy Loss
+* Adam optimizer
+* Learning rate: `0.001`
+* Batch size: `64`
+* 20 epochs
+* CUDA/GPU acceleration when available
+
+The trained model is saved as:
+
+```text
+best_mnist_mlp.pth
+```
+
+### Backend
+
+The model is exposed through a **FastAPI** endpoint:
+
+```text
+POST /predict
+```
+
+The API:
+
+* Accepts an uploaded image
+* Validates the request
+* Converts the image using PIL
+* Preprocesses it to the model's expected format
+* Runs inference
+* Returns the predicted digit
+
+### Frontend
+
+The application is built with **Flutter**.
+
+It supports:
+
+* ✏️ Drawing a digit
+* 🖼️ Uploading an image
+* 📷 Camera input
+* 🔮 Prediction results
+* ⏳ Loading states
+* ❌ Error handling
+* 🌑 Dark/glassmorphic UI
+
+This project was important because it moved beyond:
+
+```text
+Train model
+   ↓
+Print prediction
+```
+
+into:
+
+```text
+Machine Learning Model
+        +
+Backend API
+        +
+Mobile Application
+        =
+End-to-End AI System
+```
+
+---
+
+# 🧮 Understanding Neural Networks
+
+I'm currently moving deeper into the mathematics behind neural networks.
+
+The goal is to understand what happens between:
 
 ```python
-model.fit(X, y)
+loss.backward()
+optimizer.step()
 ```
 
-type of workflow.
+rather than simply knowing that these lines are required.
 
----
+Current concepts:
 
-## 💾 Model Persistence
+* Perceptrons
+* Weighted sums
+* Bias
+* Activation functions
+* Forward propagation
+* Loss functions
+* Gradients
+* Chain rule
+* Backpropagation
+* Gradient descent
+* Optimization
+* Neural-network parameters
 
-The trained model can be saved and loaded later.
+### Current focus
 
-```text
-churn_model.pth
-```
+🔥 **Backpropagation**
 
-stores the trained neural-network parameters.
-
-```text
-scaler.pkl
-```
-
-stores the fitted feature scaler.
-
-This allows the model to be trained once and then used later for inference without retraining.
-
----
-
-## 🔮 Inference
-
-The project also contains a prediction workflow where a new customer's information can be entered manually.
-
-The system:
-
-```text
-New Customer
-     ↓
-Preprocessing
-     ↓
-Scaling
-     ↓
-Trained ANN
-     ↓
-Sigmoid
-     ↓
-Churn Probability
-     ↓
-Churn / No Churn
-```
-
-Example:
-
-```text
-Churn Probability: 98.72%
-
-Prediction: CUSTOMER WILL CHURN
-```
+The next goal is to understand it mathematically and implement the ideas from scratch rather than relying entirely on PyTorch's automatic differentiation.
 
 ---
 
 # 🧪 Model Evaluation
 
-Models are not judged only by whether they produce predictions.
+A model producing a prediction does not automatically mean the model is good.
 
-I evaluate them using:
+I'm learning to evaluate models using:
 
 * Accuracy
 * Confusion Matrix
@@ -499,86 +608,31 @@ I evaluate them using:
 * Recall
 * F1 Score
 * Loss
+* Generalization
+* Train/test performance
 
-For the current churn project, one training run reached approximately **99.68% test accuracy**.
+I'm also learning to question unusually good results.
 
-However, this result is being treated cautiously.
+A high score can sometimes hide:
 
-A very high score can sometimes indicate:
-
-* Duplicate records
 * Data leakage
+* Duplicate records
 * Train/test contamination
 * Dataset-specific patterns
+* Overfitting
 * An unusually easy dataset
 
-So the next step is not simply to celebrate the 99.68%.
+The goal is not:
 
-The next step is to **investigate why the model performs so well and whether it actually generalizes**.
+> **"I got 99%, therefore my model is amazing."**
 
----
+The goal is:
 
-# 🧠 My Learning Process
-
-For each topic, I try to follow this cycle:
-
-```text
-       Learn the Concept
-              │
-              ▼
-    Understand the Mathematics
-              │
-              ▼
-     Understand the Algorithm
-              │
-              ▼
-          Write Code
-              │
-              ▼
-       Experiment with Data
-              │
-              ▼
-        Evaluate Results
-              │
-              ▼
-       Document What I Learned
-              │
-              ▼
-       Find What I Got Wrong
-              │
-              ▼
-          Improve It
-```
-
-The objective is to move beyond:
-
-```python
-model.fit(X, y)
-model.predict(X)
-```
-
-and understand what happens **inside the model**.
+> **"Why did I get 99%, and does the model actually generalize?"**
 
 ---
 
-# 🛠️ Tools & Technologies
-
-| Technology   | Purpose                    |
-| ------------ | -------------------------- |
-| Python       | Programming                |
-| NumPy        | Numerical computing        |
-| Pandas       | Data manipulation          |
-| Matplotlib   | Data visualization         |
-| Scikit-learn | Classical Machine Learning |
-| PyTorch      | Deep Learning              |
-| Torchinfo    | Neural network summaries   |
-| CUDA         | GPU acceleration           |
-| Git          | Version control            |
-| GitHub       | Code and documentation     |
-
----
-
-# 📈 Progress
+# 📈 Current Progress
 
 ## ✅ Completed
 
@@ -589,7 +643,7 @@ and understand what happens **inside the model**.
 * Dataset exploration
 * Data cleaning
 
-### Supervised Learning
+### Machine Learning
 
 * Linear Regression
 * Polynomial Regression
@@ -597,36 +651,24 @@ and understand what happens **inside the model**.
 * MAE
 * MSE
 * RMSE
-* R² Score
+* R²
 * Ridge Regression
 * L2 Regularization
-* Overfitting
 * Lasso Regression
 * L1 Regularization
-* Feature Selection
 * Elastic Net
 * Logistic Regression
-* Sigmoid Function
+* Sigmoid
 * Binary Classification
-* Accuracy
-* Confusion Matrix
-* Precision
-* Recall
-* F1 Score
-* Log Loss
-* Model Complexity
+* Classification Metrics
 * Decision Trees
 * Random Forest
-* K-Nearest Neighbors
+* KNN
 * Naive Bayes
-* Support Vector Machines
+* SVM
 * Cross-Validation
 * Hyperparameter Tuning
-
-### Unsupervised Learning
-
-* K-Means Clustering
-* Elbow Method
+* K-Means
 * PCA
 
 ### Deep Learning
@@ -636,7 +678,6 @@ and understand what happens **inside the model**.
 * PyTorch fundamentals
 * ANN
 * Forward Propagation
-* Backpropagation
 * Loss Functions
 * Optimizers
 * DataLoader
@@ -644,27 +685,36 @@ and understand what happens **inside the model**.
 * Model Saving
 * Model Loading
 * Inference
+* GPU acceleration
+* Building an end-to-end ML application
 
 ---
 
-# 🔨 Currently Learning
+# 🚧 Currently Learning
 
-Deep Learning is currently the next major stage.
+The current stage of the journey is **Deep Learning fundamentals**.
 
-Upcoming topics include:
+### Right now
 
-* Neural Networks from Scratch
-* Activation Functions
-* Backpropagation in greater depth
-* Optimization
-* PyTorch
+* 🧮 Backpropagation
+* 🔗 Chain Rule
+* 📉 Gradient Descent
+* 🧠 Neural Networks from Scratch
+* ⚡ Activation Functions
+* 🔥 PyTorch internals
+
+### Coming next
+
 * CNNs
 * Image Classification
-* Regularization in Neural Networks
+* Regularization
 * Dropout
 * Batch Normalization
+* Better preprocessing
+* Model architectures
+* Computer Vision
 
-After the foundations are stronger, the journey will continue toward:
+### Eventually
 
 * NLP
 * Transformers
@@ -676,39 +726,62 @@ After the foundations are stronger, the journey will continue toward:
 
 ---
 
-# 🎯 Why I'm Building This
+# 🛠️ Tools & Technologies
 
-A lot of Machine Learning tutorials teach you how to use an API.
+| Technology   | Purpose                        |
+| ------------ | ------------------------------ |
+| Python       | Programming                    |
+| NumPy        | Numerical computing            |
+| Pandas       | Data manipulation              |
+| Matplotlib   | Visualization                  |
+| Scikit-learn | Classical Machine Learning     |
+| PyTorch      | Deep Learning                  |
+| Torchinfo    | Neural-network summaries       |
+| CUDA         | GPU acceleration               |
+| FastAPI      | ML API development             |
+| Flutter      | Mobile application development |
+| Git          | Version control                |
+| GitHub       | Code & documentation           |
 
-That's useful, but it's not enough for me.
+---
 
-I want to understand:
+# 🧠 My Learning Process
 
-* What problem does the algorithm solve?
-* What assumptions does it make?
-* What is happening mathematically?
-* How does the algorithm learn?
-* What parameters control it?
-* Why does it make a particular prediction?
-* How can it overfit?
-* How should it be evaluated?
-* When should it be used?
-* When should it not be used?
-
-This repository is my attempt to answer those questions through:
+For each topic, I try to follow this cycle:
 
 ```text
-Code
-  +
-Mathematics
-  +
-Experiments
-  +
-Failures
-  +
-Debugging
-  +
-Documentation
+Learn the Concept
+       ↓
+Understand the Mathematics
+       ↓
+Understand the Algorithm
+       ↓
+Write Code
+       ↓
+Experiment
+       ↓
+Evaluate Results
+       ↓
+Document What I Learned
+       ↓
+Find What I Got Wrong
+       ↓
+Fix It
+       ↓
+Repeat
+```
+
+I'm deliberately trying to move beyond:
+
+```python
+model.fit(X, y)
+model.predict(X)
+```
+
+and toward:
+
+```text
+What is happening inside the model?
 ```
 
 ---
@@ -717,70 +790,159 @@ Documentation
 
 AI tools are part of this learning process.
 
-**ChatGPT and other AI tools may be used to:**
+I may use AI to:
 
 * Explain difficult concepts
-* Help translate implementations between frameworks
 * Debug errors
+* Review implementations
+* Translate ideas between frameworks
 * Suggest approaches
-* Review code
 * Help document projects
 * Explain unexpected results
 
-AI assistance is **not treated as a replacement for understanding**.
+But AI assistance is **not a replacement for understanding**.
 
-When AI helps write code, the goal is to understand the code, test it, break it, modify it, and eventually be able to explain what it is doing.
+If AI helps me write something, the goal is to:
 
-This repository therefore documents both the **learning process and the use of AI as a development/learning tool**.
+1. Understand it
+2. Run it
+3. Break it
+4. Modify it
+5. Debug it
+6. Explain it myself
+
+The final goal is **understanding, not just working code**.
 
 ---
 
-# 🚧 Status
+# 🎯 Why I'm Building This
 
-This repository is actively being developed.
+A lot of Machine Learning education focuses on:
 
-I'm learning one concept at a time, implementing it, experimenting with datasets, debugging problems, evaluating results, and documenting what I understand.
+```text
+Import library
+      ↓
+Call API
+      ↓
+Get prediction
+      ↓
+Celebrate accuracy
+```
 
-The structure will change as the journey moves from:
+That's useful.
+
+But I want to go deeper.
+
+I want to understand:
+
+* What problem does the algorithm solve?
+* What assumptions does it make?
+* What is happening mathematically?
+* How does it learn?
+* How are parameters updated?
+* Why does it make a particular prediction?
+* Why does it fail?
+* How can it overfit?
+* How should it be evaluated?
+* When should it be used?
+* When should it not be used?
+
+This repository is my attempt to answer those questions through:
+
+```text
+        Code
+         +
+     Mathematics
+         +
+     Experiments
+         +
+       Failure
+         +
+      Debugging
+         +
+    Documentation
+         +
+      Curiosity
+```
+
+---
+
+# 🚧 This Repository Is Supposed to Be Imperfect
+
+This isn't a finished textbook.
+
+It's a record of learning.
+
+Some code will be:
+
+* Imperfect
+* Rewritten
+* Inefficient
+* Experimental
+* Wrong at first
+* Eventually improved
+
+Some experiments will fail.
+
+Some results will look suspicious.
+
+That's part of the process.
+
+The repository will change as my understanding changes.
+
+---
+
+# 🗺️ Long-Term Direction
 
 ```text
 Data Science
       ↓
 Machine Learning
       ↓
-Unsupervised Learning
-      ↓
 Deep Learning
       ↓
-Advanced AI
+Computer Vision
       ↓
-Research
+NLP
+      ↓
+Transformers
+      ↓
+Generative AI
+      ↓
+AI Agents
+      ↓
+Multimodal AI
+      ↓
+AI Research
 ```
+
+One concept at a time.
+
+One experiment at a time.
+
+One bug at a time.
 
 ---
 
-# 🤝 Let's Build Shit Together
+# 🔥 Let's Build Shit Together
 
-This isn't a finished textbook.
+This repository is my learning journey.
 
-It's a record of learning AI from the fundamentals.
+Not a course.
 
-Some code will be imperfect.
+Not a polished portfolio pretending everything worked perfectly.
 
-Some experiments will fail.
+Not a collection of copied notebooks.
 
-Some results will be suspicious.
+It's the actual process:
 
-Some implementations will eventually be rewritten.
+**learn → build → break → debug → understand → improve.**
 
-That's the point.
+If something here is wrong, outdated, inefficient, or could be explained better, that's part of the journey.
 
-If something is wrong, inefficient, outdated, or poorly implemented, that's part of the journey.
+**Keep learning.**
+**Keep building.**
+**Keep breaking things.**
+**Keep figuring out why they broke.**
 
-**Keep learning.
-Keep building.
-Keep breaking things.
-Keep figuring out why they broke.**
-
-⭐ Repository:
-https://github.com/psorigins10/artificial-intelligence-learning-journey
+⭐ [Repository](https://github.com/psorigins10/artificial-intelligence-learning-journey)
