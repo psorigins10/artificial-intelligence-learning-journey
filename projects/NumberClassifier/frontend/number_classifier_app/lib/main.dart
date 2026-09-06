@@ -119,7 +119,10 @@ class GlowBlob extends StatelessWidget {
         decoration: BoxDecoration(
           shape: BoxShape.circle,
           gradient: RadialGradient(
-            colors: [color.withOpacity(0.55), color.withOpacity(0.0)],
+            colors: [
+              color.withValues(alpha: 0.55),
+              color.withValues(alpha: 0.0),
+            ],
           ),
         ),
       ),
@@ -155,7 +158,7 @@ class NeonButton extends StatelessWidget {
               ? []
               : [
                   BoxShadow(
-                    color: colors.first.withOpacity(0.55),
+                    color: colors.first.withValues(alpha: 0.55),
                     blurRadius: 20,
                     spreadRadius: 0.5,
                     offset: const Offset(0, 6),
@@ -287,7 +290,7 @@ class GlassSegmentedTabs extends StatelessWidget {
                   boxShadow: selected
                       ? [
                           BoxShadow(
-                            color: AppColors.glow1.withOpacity(0.45),
+                            color: AppColors.glow1.withValues(alpha: 0.45),
                             blurRadius: 16,
                             offset: const Offset(0, 4),
                           ),
@@ -467,7 +470,7 @@ class _HeaderTitle extends StatelessWidget {
             ),
             boxShadow: [
               BoxShadow(
-                color: AppColors.glow1.withOpacity(0.5),
+                color: AppColors.glow1.withValues(alpha: 0.5),
                 blurRadius: 18,
               ),
             ],
@@ -654,7 +657,7 @@ class _DrawTabState extends State<DrawTab> {
                 borderRadius: BorderRadius.circular(24),
                 boxShadow: [
                   BoxShadow(
-                    color: AppColors.glow2.withOpacity(0.28),
+                    color: AppColors.glow2.withValues(alpha: 0.28),
                     blurRadius: 30,
                     spreadRadius: 1,
                   ),
@@ -717,7 +720,7 @@ class _NeonStrokePainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final glowPaint = Paint()
-      ..color = AppColors.glow2.withOpacity(0.55)
+      ..color = AppColors.glow2.withValues(alpha: 0.55)
       ..strokeWidth = 30
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
@@ -819,7 +822,7 @@ class _UploadTabState extends State<UploadTab> {
                     ? []
                     : [
                         BoxShadow(
-                          color: AppColors.glow1.withOpacity(0.28),
+                          color: AppColors.glow1.withValues(alpha: 0.28),
                           blurRadius: 30,
                           spreadRadius: 1,
                         ),

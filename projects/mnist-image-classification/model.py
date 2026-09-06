@@ -117,6 +117,6 @@ for epoch in range(epochs):
         )
 
         print("  ✓ Best model saved!")
-        
+
 print(f"\nBest accuracy: {best_accuracy * 100:.2f}%")
 print("Best model saved as: best_mnist_mlp.pth")
