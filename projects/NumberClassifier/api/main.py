@@ -1,3 +1,5 @@
+# Run this on terminal before starting the server: adb reverse tcp:8000 tcp:8000
+# Run the command to use the server {PYTHONPATH=.. uvicorn main:app --host 0.0.0.0 --port 8000 --reload}
 from fastapi import FastAPI
 from fastapi import UploadFile
 from fastapi import File
