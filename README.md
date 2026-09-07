@@ -687,6 +687,7 @@ The goal is:
 * Inference
 * GPU acceleration
 * Building an end-to-end ML application
+* 🧮 Backpropagation
 
 ---
 
@@ -696,7 +697,6 @@ The current stage of the journey is **Deep Learning fundamentals**.
 
 ### Right now
 
-* 🧮 Backpropagation
 * 🔗 Chain Rule
 * 📉 Gradient Descent
 * 🧠 Neural Networks from Scratch
