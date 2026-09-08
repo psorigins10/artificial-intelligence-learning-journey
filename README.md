@@ -702,6 +702,7 @@ The current stage of the journey is **Deep Learning fundamentals**.
 * 🧠 Neural Networks from Scratch
 * ⚡ Activation Functions
 * 🔥 PyTorch internals
+* Vanishing Gradient Problem
 
 ### Coming next
 
