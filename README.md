@@ -688,6 +688,8 @@ The goal is:
 * GPU acceleration
 * Building an end-to-end ML application
 * 🧮 Backpropagation
+* Memoization
+* 📉 Gradient Descent
 
 ---
 
@@ -698,7 +700,6 @@ The current stage of the journey is **Deep Learning fundamentals**.
 ### Right now
 
 * 🔗 Chain Rule
-* 📉 Gradient Descent
 * 🧠 Neural Networks from Scratch
 * ⚡ Activation Functions
 * 🔥 PyTorch internals
